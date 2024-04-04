@@ -1,0 +1,48 @@
+header {
+    background-color: mistyrose;
+    border:medium maroon solid;
+}
+header h1, header p {
+    color:maroon;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+nav {
+background-color: chocolate;
+
+}
+
+nav p{
+    border: medium wheat solid;
+    display: inline-block;
+    width:17vw;
+    min-width:85px;
+    text-align: center;
+    margin-left: 3px;
+}
+
+p a {
+    font-weight: bold;
+    color:ivory;
+    text-decoration: none;
+ 
+}
+
+main {
+    background-color: mistyrose;
+}
+main h2, main h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h2 {
+    text-align:center;
+}
+
+footer {
+    background:firebrick;
+}
+footer p {
+    color: moccasin;
+    font-style: italic;
+    text-align:center;
+}
