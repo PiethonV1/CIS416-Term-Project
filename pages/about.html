@@ -2,44 +2,48 @@
 <html> 
 <head> 
 <meta charset="UTF-8">
-<title> Chapter 4: Term Project</title>
-<link rel="stylesheet" href="mystyles.css">
+<title> Chapter 5: Term Project</title>
+<link rel="stylesheet" href="../mystyles.css">
 <style>
   .people img  {
         width:100px;
     }
+
+    h3+img {
+         float:right;
+    }
 </style>
 </head> 
 
+<header>
+    <a href="index.html"><img src="../images/logo.png" width="100" alt="logo"></a>
+     <h1>CyberIntel</h1> 
+     <div class="clearfix"></div>
+     <nav>
+        <p>
+            <a href="../index.html">Home</a>
+        </p>
+        <p>
+            <a href="about.html">ABOUT US</a>
+        </p>
+        <p>
+            <a href="data.html">DATA</a>
+        </p>
+        <p>
+            <a href="#">Topic 4</a>
+        </p>
+        <p>
+            <a href="#">Topic 5</a>
+        </p>
+    </nav>
+ </header>
 
-
-<body>  
-    <header>
-        <a href="index.html"><img src="images/logo.png" width="100" alt="logo"></a>
-         <h1>CyberIntel</h1> 
-         <nav>
-            <p>
-                <a href="index.html">Home</a>
-            </p>
-            <p>
-                <a href="about.html">ABOUT US</a>
-            </p>
-            <p>
-                <a href="#">Topic 3</a>
-            </p>
-            <p>
-                <a href="#">Topic 4</a>
-            </p>
-            <p>
-                <a href="#">Topic 5</a>
-            </p>
-        </nav>
-     </header>      
+<body>        
     <main>
         <section> 
             <article> 
                 <h2>Our History</h2>
-                <img width="900" src="images/history.png" alt="Our History">
+                <img width="900" src="../images/history.png" alt="Our History">
                 <p>
                    CyberIntel is founded by Lili Chen in 2010 to provide cybersecurity intelligence and Security Operation Services to small and midium business.
                 </p>
@@ -47,26 +51,23 @@
                   Since its establishment, CyberIntel has helped hundreds of companies manage and responde to cybersecurity incidents. 
                   It's regarded one to the TOP 10 cybersecurity service provider in the Northeast USA.
                 </p>
-            </article>
-        </section>
+            </section>
 
             <hr> <!---create a horizontal rule-->
 
             <section class="people">
                 <h2>Our People</h2>
-                <!--<div>--->
                     <button onClick="carlos()">Carlos Love</button> 
                     <button onClick="susan()">Susan Bowen</button>
                     <h3 id="person"></h3>
                     <img id="PersonImage">
                     <p id="PersonInfo"></p>
-                <!---</div>-->
-                
+                    <div class="clearfix"></div> 
             </section>
 
     </main> 
     <footer>
-        <p>Footer content coming soon</p>
+        <p>Site copyright©2024 by Lili Chen</p>
     </footer>
 
     <script>
@@ -76,15 +77,15 @@
         function carlos(){
 
             document.getElementById("person").innerText = "Carlos Love, Senior Cybersecurity Engineer"
-            document.getElementById("PersonInfo").innerText = "Before joining CyberIntel in 2010, Carlos Love is a veteran cybersecurity expert, who graduated from Rhode Island College in 2000." 
-            document.getElementById("PersonImage").setAttribute("src","images/Carlos Love.png")
+            document.getElementById("PersonInfo").innerText = "Carlos Love is a veteran cybersecurity expert, who graduated from Rhode Island College in 2000. Before joining CyberIntel in 2010, Carlos was the Information System Technicition at Roger Williams High School for 5 years, then transition to cybersecurity roles at Roger William University." 
+            document.getElementById("PersonImage").setAttribute("src","../images/Carlos Love.png")
         }
 
 
         function susan(){
             document.getElementById("person").innerText = "Susan Bowen, CISO"
             document.getElementById("PersonInfo").innerText = "Susan Bowen has experience in managing IT department for 1o years before transitioning herself into the cybersecurity field. Susan is a ISC2 certified cybersecurity expert and managed the Cybersecurity department for multiple nonprofit organizations before joining CyberIntel corporation."
-            document.getElementById("PersonImage").setAttribute("src","images/Susan Bowen.png")
+            document.getElementById("PersonImage").setAttribute("src","../images/Susan Bowen.png")
         }
     </script>
 </body>

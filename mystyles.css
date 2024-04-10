@@ -2,11 +2,22 @@ header {
     background-color: mistyrose;
     border:medium maroon solid;
 }
+
+header img {
+    float:left;
+}
+
+div.clearfix{
+    clear:both;
+}
+
+
 header h1, header p {
     color:maroon;
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
 nav {
 background-color: chocolate;
 
@@ -25,7 +36,8 @@ p a {
     font-weight: bold;
     color:ivory;
     text-decoration: none;
- 
+    width:100%;
+    display:inline-block;
 }
 
 main {
@@ -38,6 +50,7 @@ main h2 {
     text-align:center;
 }
 
+
 footer {
     background:firebrick;
 }
@@ -45,4 +58,7 @@ footer p {
     color: moccasin;
     font-style: italic;
     text-align:center;
+    font-size: 0.73rem;
+    font-style: italic;
+    text-align: center;   
 }
