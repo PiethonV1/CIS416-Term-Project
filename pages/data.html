@@ -216,13 +216,13 @@
             function findCourse() {
                 let courseNumber = -1;
                 do {
-                    courseNumber = prompt("Enter course number (1 to " + courseName.length + "):");
+                    courseNumber = prompt("Enter course number (0 to " + courseName.length + "):");
                     if (courseNumber === null) return; // User clicked cancel
                     courseNumber = parseInt(courseNumber);
-                    if (isNaN(courseNumber) || courseNumber < 1 || courseNumber > courseName.length) {
+                    if (isNaN(courseNumber) || courseNumber < 0 || courseNumber > courseName.length) {
                         alert("Please enter a valid course number.");
                     }
-                } while (isNaN(courseNumber) || courseNumber < 1 || courseNumber > courseName.length);
+                } while (isNaN(courseNumber) || courseNumber < 0 || courseNumber > courseName.length);
 
                 const selectedCourse = courseName[courseNumber - 1];
                 alert("Selected course: " + selectedCourse);
