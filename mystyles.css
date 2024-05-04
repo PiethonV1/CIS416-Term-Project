@@ -73,5 +73,9 @@ footer p {
     text-align:center;
     font-size: 0.73rem;
     font-style: italic;
-    text-align: center;   
+    text-align: center;  
+    position: fixed; 
+    bottom: 0;
+    padding: 10px;
 }
+

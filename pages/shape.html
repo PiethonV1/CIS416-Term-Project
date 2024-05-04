@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Term Project</title>
+    <link rel="stylesheet" href="styles.css">
+        <style>
+        main section.shapes-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+            }
+
+            /* Shape box styling */
+        section div.container {
+                border: 1px solid darkblue;
+                height: 150px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div.shape {
+                width: 50px;
+                height: 50px;
+                background-color:aquamarine;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+            }
+
+            div#shape2 {
+                transform: translate(20px, 20px);
+            }
+
+            div#shape3 {
+                transform: rotate(60deg);
+                transform-origin: center;
+            }
+
+            div#shape4 {
+                transform: scale(2);
+                transform-origin: center;
+            }
+
+        div#shape5 {
+                transform: skewX(20deg);
+                transform-origin: center;
+            }
+        
+            ol {
+                padding-left: 20px;
+            }
+
+            ol li::marker {
+                color: red;   /* red markers for ol */
+            }
+    </style>
+
+
+               
+</head>
+<body>
+
+<header>
+    <a href="../index.html"><img src="../images/logo.png" width="100" alt="logo"></a>
+        <h1>CyberIntel</h1> 
+        <div class="clearfix"></div>
+    <nav>
+        <a href="../index.html">Home</a>
+    </p>
+    <p>
+        <a href="about.html">ABOUT US</a>
+    </p>
+    <p>
+        <a href="data.html">DATA</a>
+    </p>
+    <p>
+        <a href="join.html">JOIN</a>
+    </p>
+    <p>
+        <a href="Shapes.html">SHAPE</a>
+    </p>
+    </nav>
+</header>
+
+<main style="padding-top: 10px;">
+    <section class="shapes-grid">
+        <div class="container">
+            <div id="shape1" class="shape">1</div>
+        </div>
+        <div class="container">
+            <div id="shape2" class="shape">2</div>
+        </div>
+        <div class="container">
+            <div id="shape3" class="shape">3</div>
+        </div>
+        <div class="container">
+            <div id="shape4" class="shape">4</div>
+        </div>
+        <div class="container">
+            <div id="shape5" class="shape">5</div>
+        </div>
+    </section>
+    <ol>
+        <li>Number 1 - Normal</li>
+        <li>Number 2 - Translated</li>
+        <li>Number 3 - Rotated</li>
+        <li>Number 4 - Scaled</li>
+        <li>Number 5 - Skewed</li>
+    </ol>
+</main>
+
+
+
+<footer>
+    <p>Site copyright©2024 by Lili Chen</p> 
+</footer>
+
+
+</body>
+</html>

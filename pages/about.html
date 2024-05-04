@@ -2,7 +2,7 @@
 <html> 
 <head> 
 <meta charset="UTF-8">
-<title> Chapter 6: Term Project</title>
+<title> Term Project</title>
 <link rel="stylesheet" href="../mystyles.css">
 <style>
   .people img  {
@@ -18,6 +18,33 @@
         box-shadow: -10px 10px 10px;
     }
 
+    .image-grid {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-top: 20px;
+        }
+    .cyberImage {
+        position: relative;
+        background-color:blanchedalmond;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .icyberImage img {
+        width: 100%;
+        display: block;
+    }
+    .cyberImage  p {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        color: #fff; /* White color for captions */
+        background-color: rgba(0, 0, 0, 0.7); /* 0.7: Semi-transparent background */
+        padding: 5px; 
+        border-radius: 5px;
+    }
 </style>
 </head> 
 
@@ -36,10 +63,10 @@
             <a href="data.html">DATA</a>
         </p>
         <p>
-            <a href="#">Topic 4</a>
+            <a href="join.html">JOIN</a>
         </p>
         <p>
-            <a href="#">Topic 5</a>
+            <a href="shape.html">SHAPE</a>
         </p>
     </nav>
  </header>
@@ -47,6 +74,18 @@
 <body>        
     <main>
         <section> 
+
+            <section class="image-grid">
+                <div class="cyberImage"><img src="image1.png" alt="Image 1"><p>Cyber Training 1</p></div>
+                <div class="cyberImage"><img src="image2.png" alt="Image 2"><p>Cyber Training 2</p></div>
+                <div class="cyberImage"><img src="image3.png" alt="Image 3"><p>Cyber Training 3</p></div>
+                <div class="cyberImage"><img src="image4.png" alt="Image 4"><p>Cyber Training 4</p></div>
+                <div class="cyberImage"><img src="image5.png" alt="Image 5"><p>Cyber Training 5</p></div>
+                <div class="cyberImage"><img src="image6.png" alt="Image 6"><p>Cyber Training 6</p></div>
+                <div class="cyberImage"><img src="image7.png" alt="Image 7"><p>Cyber Training 7</p></div>
+                <div class="cyberImage"><img src="image8.png" alt="Image 8"><p>Cyber Training 8</p></div>
+            </section>
+
             <article> 
                 <h2>Our History</h2>
                 <img width="900" src="../images/history.png" alt="Our History">
@@ -95,6 +134,15 @@
             document.getElementById("PersonImage").setAttribute("src","../images/Susan Bowen.png")
         }
     </script>
+
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
 </body>
 
 </html>

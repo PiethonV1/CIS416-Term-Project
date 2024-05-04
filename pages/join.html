@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JTerm Project</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    main {
+        border: 8px solid var(--dark-color); 
+        padding: 0 20px; /* Padding on left and right */
+        padding-bottom: 60px; 
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    label {
+        display:inline-block;
+        width:5px;
+        text-align:right;
+    }
+
+    fieldset {
+        border: 1px solid var(--light-color); /* Border around fields */
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid var(--light-color);
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    /* Button styles */
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 5px 15px;
+        background-color: var(--dark-color);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: var(--light-color);
+    }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+</style>
+</head>
+<body>
+
+<header>
+    <a href="../index.html"><img src="../images/logo.png" width="100" alt="logo"></a>
+        <h1>CyberIntel</h1> 
+        <div class="clearfix"></div>
+    <nav>
+        <a href="../index.html">Home</a>
+    </p>
+    <p>
+        <a href="about.html">ABOUT US</a>
+    </p>
+    <p>
+        <a href="data.html">DATA</a>
+    </p>
+    <p>
+        <a href="join.html">JOIN</a>
+    </p>
+    <p>
+        <a href="Shapes.html">SHAPE</a>
+    </p>
+    </nav>
+</header>
+
+<div class="container">
+    <main>
+        <h2>Please join our mailing list</h2>
+
+        <form>
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Interests</legend>
+                <input type="checkbox" id="interest1" name="interest1">
+                <label for="interest1">Sign me up for coupons.</label><br>
+                <input type="checkbox" id="interest2" name="interest2">
+                <label for="interest2">Please email me about exciting new products and services.</label><br>
+                <input type="checkbox" id="interest3" name="interest3">
+                <label for="interest3">Add me to Pawsome's newsletter.</label><br>
+                <input type="checkbox" id="interest4" name="interest4">
+                <label for="interest4">Add me to the waitlist for limited edition products.</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>How many years have you been a pawsome customer</legend>
+                <input type="radio" id="experience1" name="experience" value="1">
+                <label for="experience1">0</label>
+                <input type="radio" id="experience2" name="experience" value="2">
+                <label for="experience2">0-1</label>
+                <input type="radio" id="experience3-5" name="experience" value="3-5">
+                <label for="experience3-5">1-3</label>
+                <input type="radio" id="experience6-10" name="experience" value="6-10">
+                <label for="experience6-10">3-10</label>
+            </fieldset>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments">Please leave your comments here.</textarea><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+</div>
+
+<footer>
+    <p>Site copyright©2024 by Lili Chen</p> 
+</footer>
+
+</body>
+</html>
+
+
+
+

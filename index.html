@@ -2,8 +2,48 @@
 <html> 
 <head> 
 <meta charset="UTF-8">
-<title> Chapter 6: Term Project</title>
+<title> Term Project</title>
 <link rel="stylesheet" href="../mystyles.css">
+    <style>
+
+        header {
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column layout by default */
+            gap: 20px;
+        }
+
+        @media (min-width: 900px) {
+            main {
+                grid-template-columns: repeat(2, 1fr); /* Two columns for wider screens */
+            }
+        }
+
+        .cyberImg {
+            width: 150px;
+            float: left;
+            margin-right: 10px; 
+        }
+
+        article p:first-of-type {
+            font-size: 120%;
+            font-variant: small-caps;
+        }
+
+        article p:first-of-type::first-letter {
+            font-weight: bold;
+            color:goldenrod;
+        }
+
+        .container {
+            grid-column: 1 / -1; /* Ensures the button spans all columns */
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head> 
 <body> 
     <header>
@@ -21,16 +61,18 @@
                 <a href="pages/data.html">DATA</a>
             </p>
             <p>
-                <a href="#">Topic 4</a>
+                <a href="pages/join.html">JOIN</a>
             </p>
             <p>
-                <a href="#">Topic 5</a>
+                <a href="pages/shape.html">SHAPE</a>
             </p>
         </nav>
     </header>
         <main>   
             <article> 
                 <h2>Heading 2</h2>
+                <img src="images/cyber1.png" alt="cyber img1" class="cyberImg">
+
                 <p> 
                     Lorem ipsum dolor, 
                     sit amet consectetur adipisicing elit. 
@@ -75,11 +117,40 @@
                 </p>
             </article>
 
+            <article>
+                <h2>Mission</h2>
+                <img src="images/cyber2.png" alt="cyber image 2" class="cyberImg">
+
+                <p>
+                    Our Mission is to secure Rhode Island's digital infrastructure.
+                </p>
+                <p>
+                    With combined three decades experience in cybersecurity, we are dedicated to defend Rhode Island's cyberspace through full-spectrum operations to deter, disrupt, and, if necessary, defeat adversary cyber and malign influence actors.
+                </p>
+
+            </article>
+
+            <div class="container">
+                <button id="swapBtn">Swap Articles</button>
+            </div>
         </main>
          
         <footer>
             <p>Site copyright©2024 by Lili Chen</p>
         </footer>
+
+        <script>
+            document.getElementById('swapBtn').addEventListener('click', function() {
+                let articles = document.querySelectorAll('article');
+                if (articles.length >= 2) {
+                    // Store the content of the first article
+                    let firstArticleContent = articles[0].innerHTML;
+                    // Swap the first article content with the second
+                    articles[0].innerHTML = articles[1].innerHTML;
+                    articles[1].innerHTML = firstArticleContent;
+                }
+            });
+        </script>
 </body> 
 
 </html>
